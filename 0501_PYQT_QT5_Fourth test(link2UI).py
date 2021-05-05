@@ -10,6 +10,7 @@ class MAINsolfware(QMainWindow):
         super(MAINsolfware,self).__init__(parent)
 
         loadUi('UI_file/0505_test.ui',self)
+        #test
 
         # self.setFixedSize(self.sizeHint())                           # 这一条是用来调整窗口大小的
         self.setWindowIcon(QIcon('./UI_file/Pic/Golem.ico'))         # 设置窗口图标
