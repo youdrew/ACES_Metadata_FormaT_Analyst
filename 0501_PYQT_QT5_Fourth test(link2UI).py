@@ -44,6 +44,7 @@ class MAINsolfware(QMainWindow):
         AMF_Save_Path = self.OUTPUTPanel_SaveAs_LineEdit.text()
         print("文件保存路径：" + AMF_Save_Path)
 
+
 if __name__ == '__main__':
     # 这条命令__name__ == '__main__'，如果是导入的方式，是默认不执行里面的语句的。
     # https://www.cnblogs.com/suguangti/p/12632119.html
