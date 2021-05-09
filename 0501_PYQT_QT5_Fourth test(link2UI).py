@@ -45,6 +45,13 @@ class MAINsolfware(QMainWindow):
         self.ANALYSISPanel_Info_EmailAddress_LineEdit.setReadOnly(True)
         self.ANALYSISPanel_Info_AMFUUID_LineEdit.setReadOnly(True)
 
+        #设置ClipID文件下几个控件为只读
+        self.ANALYSISPanel_Info_CilpID_TextEdit.setReadOnly(True)
+        self.ANALYSISPanel_Info_CilpName_LineEdit.setReadOnly(True)
+        self.ANALYSISPanel_Info_CilpUUID_LineEdit.setReadOnly(True)
+        self.ANALYSISPanel_Info_FilePath_LineEdit.setReadOnly(True)
+        self.ANALYSISPanel_Info_Sequence_LineEdit.setReadOnly(True)
+
         self.pushButton_2.clicked.connect(self.IMPORTPanel_OpenAmffile)
         # self.findChild(QWidget, "ANALYSISPanel_Info_AMFInfo_TextEdit").setPlainText("test")
 
@@ -55,18 +62,16 @@ class MAINsolfware(QMainWindow):
         '''点击[open amf file]按钮
              从文件管理系统选择amf文件
              解析amf文件'''
-        # amf_filePath = QFileDialog.getOpenFileName(self,"open file dialog","D:\\","amf files(*.amf)")
-        # global amf_filepath
-        # amf_filepath = amf_filePath[0]
+        amf_filePath = QFileDialog.getOpenFileName(self,"open file dialog","D:\\","amf files(*.amf)")
+        global amf_filepath
+        amf_filepath = amf_filePath[0]
         # print(amf_filepath)
 
         # 调试代码
-        global amf_filepath
-        amf_filepath = 'D:/work/AMFTool/Isabella_trial.amf'
+        # global amf_filepath
+        # amf_filepath = 'D:/work/AMFTool/Isabella_trial.amf'
 
         self.Printinfo()
-        # self.ANALYSISPanel_Info_AMFInfo_TextEdit.setPlainText(amfInfo_description)
-        # self.ANALYSISPanel_Info_Name_LineEdit.setPlainText(amfInfo_name)
 
 
     def I_was_clicked(self):
@@ -84,7 +89,6 @@ class MAINsolfware(QMainWindow):
         print("文件保存路径：" + AMF_Save_Path)
 
     def get_AMFInfo(self,root):
-        print('run...')
         '''解析AMFinfo部分的四个信息
            description
            name
@@ -197,7 +201,6 @@ class MAINsolfware(QMainWindow):
 
     def Printinfo(self):
         '''解析并打印amf文件中的信息'''
-        print("Printinfo run...")
         # 解析amf文件,获取根节点root
         tree = ET.parse(amf_filepath)
         global root
