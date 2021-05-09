@@ -1,0 +1,2611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>643</width>
+    <height>962</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Triangular</enum>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideRight</enum>
+      </property>
+      <property name="usesScrollButtons">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="IMPORTPanel">
+       <attribute name="title">
+        <string>Import Panel</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2" columnstretch="1,1" rowminimumheight="4,1">
+        <property name="horizontalSpacing">
+         <number>-1</number>
+        </property>
+        <item row="1" column="1">
+         <layout class="QVBoxLayout" name="IMPORTPanel_Right_QVBoxLayout" stretch="4,1">
+          <property name="spacing">
+           <number>-1</number>
+          </property>
+          <item>
+           <widget class="QTabWidget" name="IMPORTPanel_Right_QTabWidget">
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="tab_5">
+             <attribute name="title">
+              <string>Tab 1</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QListView" name="listView">
+                <property name="toolTipDuration">
+                 <number>-1</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_6">
+             <attribute name="title">
+              <string>Tab 2</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="tableWidget"/>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QOpenGLWidget" name="openGLWidget"/>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <layout class="QVBoxLayout" name="IMPORTPanel_Lift_QVBoxLayout" stretch="7,1,1">
+          <item>
+           <widget class="QWidget" name="widget" native="true">
+            <layout class="QGridLayout" name="gridLayout_10">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>AMF Analyst Logo
+
+welcome to here 
+（Software version 0.1 ｜ AMF version 2.0) 
+
+Developer ：
+ YuJingxuan  LiaoChuang
+
+Thank For :
+ Beijing Film Academy DMI
+AMAPS TuJingkai MaXuyi ZhuHongxuan 
+…</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_3" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QPushButton" name="pushButton">
+               <property name="text">
+                <string>Create a AMF</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="text">
+                <string>Open AMF file</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ANALYSISPanel">
+       <attribute name="title">
+        <string>Analysis Panel</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_11">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QTabWidget" name="tabWidget_3">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="tabPosition">
+           <enum>QTabWidget::South</enum>
+          </property>
+          <property name="tabShape">
+           <enum>QTabWidget::Triangular</enum>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="Form">
+           <attribute name="title">
+            <string>AMF / Clip Info</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_14">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item row="2" column="3">
+             <widget class="QWidget" name="widget_4" native="true">
+              <layout class="QGridLayout" name="gridLayout_15">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="15" column="1" colspan="3">
+                <widget class="QLineEdit" name="ANALYSISPanel_Info_CilpUUID_LineEdit">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="1" colspan="3">
+                <widget class="QTextEdit" name="ANALYSISPanel_Info_AMFInfo_TextEdit">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="0">
+                <widget class="QLabel" name="ANALYSISPanel_Info_AMFUUID_Label">
+                 <property name="text">
+                  <string>AMF UUID</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0" colspan="4">
+                <widget class="Line" name="line_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="13" column="0">
+                <spacer name="verticalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="10" column="0" colspan="4">
+                <widget class="Line" name="ANALYSISPanel_Info_Line_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="16" column="1" colspan="3">
+                <widget class="QLineEdit" name="ANALYSISPanel_Info_FilePath_LineEdit">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="18" column="1">
+                <widget class="QLineEdit" name="ANALYSISPanel_Info_Sequence_1Idx_LineEdit">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="13" column="1" colspan="3">
+                <widget class="QTextEdit" name="ANALYSISPanel_Info_CilpID_TextEdit">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="0">
+                <widget class="QLabel" name="ANALYSISPanel_Info_EmailAddress_Label">
+                 <property name="text">
+                  <string>Email Address</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="1" colspan="3">
+                <widget class="QLineEdit" name="ANALYSISPanel_Info_Name_LineEdit">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="14" column="1" colspan="3">
+                <widget class="QLineEdit" name="ANALYSISPanel_Info_CilpName_LineEdit">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="15" column="0">
+                <widget class="QLabel" name="ANALYSISPanel_Info_CilpUUID_Label">
+                 <property name="text">
+                  <string>Clip UUID</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="18" column="3">
+                <widget class="QLineEdit" name="ANALYSISPanel_Info_Sequence_3Max_LineEdit">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0" colspan="4">
+                <widget class="QLabel" name="ANALYSISPanel_Info_ACESMetadataFileBasicInformation_Label">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="palette">
+                  <palette>
+                   <active>
+                    <colorrole role="WindowText">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>0</red>
+                       <green>0</green>
+                       <blue>0</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Button">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>223</red>
+                       <green>223</green>
+                       <blue>223</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Light">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>255</red>
+                       <green>255</green>
+                       <blue>255</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Midlight">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>239</red>
+                       <green>239</green>
+                       <blue>239</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Dark">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>111</red>
+                       <green>111</green>
+                       <blue>111</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Mid">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>148</red>
+                       <green>148</green>
+                       <blue>148</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Text">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>0</red>
+                       <green>0</green>
+                       <blue>0</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="BrightText">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>255</red>
+                       <green>255</green>
+                       <blue>255</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="ButtonText">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>0</red>
+                       <green>0</green>
+                       <blue>0</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Base">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>255</red>
+                       <green>255</green>
+                       <blue>255</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Window">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>223</red>
+                       <green>223</green>
+                       <blue>223</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Shadow">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>0</red>
+                       <green>0</green>
+                       <blue>0</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="AlternateBase">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>239</red>
+                       <green>239</green>
+                       <blue>239</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="ToolTipBase">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>255</red>
+                       <green>255</green>
+                       <blue>220</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="ToolTipText">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>0</red>
+                       <green>0</green>
+                       <blue>0</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                   </active>
+                   <inactive>
+                    <colorrole role="WindowText">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>0</red>
+                       <green>0</green>
+                       <blue>0</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Button">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>223</red>
+                       <green>223</green>
+                       <blue>223</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Light">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>255</red>
+                       <green>255</green>
+                       <blue>255</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Midlight">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>239</red>
+                       <green>239</green>
+                       <blue>239</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Dark">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>111</red>
+                       <green>111</green>
+                       <blue>111</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Mid">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>148</red>
+                       <green>148</green>
+                       <blue>148</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Text">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>0</red>
+                       <green>0</green>
+                       <blue>0</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="BrightText">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>255</red>
+                       <green>255</green>
+                       <blue>255</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="ButtonText">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>0</red>
+                       <green>0</green>
+                       <blue>0</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Base">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>255</red>
+                       <green>255</green>
+                       <blue>255</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Window">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>223</red>
+                       <green>223</green>
+                       <blue>223</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Shadow">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>0</red>
+                       <green>0</green>
+                       <blue>0</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="AlternateBase">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>239</red>
+                       <green>239</green>
+                       <blue>239</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="ToolTipBase">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>255</red>
+                       <green>255</green>
+                       <blue>220</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="ToolTipText">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>0</red>
+                       <green>0</green>
+                       <blue>0</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                   </inactive>
+                   <disabled>
+                    <colorrole role="WindowText">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>111</red>
+                       <green>111</green>
+                       <blue>111</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Button">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>223</red>
+                       <green>223</green>
+                       <blue>223</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Light">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>255</red>
+                       <green>255</green>
+                       <blue>255</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Midlight">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>239</red>
+                       <green>239</green>
+                       <blue>239</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Dark">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>111</red>
+                       <green>111</green>
+                       <blue>111</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Mid">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>148</red>
+                       <green>148</green>
+                       <blue>148</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Text">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>111</red>
+                       <green>111</green>
+                       <blue>111</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="BrightText">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>255</red>
+                       <green>255</green>
+                       <blue>255</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="ButtonText">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>111</red>
+                       <green>111</green>
+                       <blue>111</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Base">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>223</red>
+                       <green>223</green>
+                       <blue>223</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Window">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>223</red>
+                       <green>223</green>
+                       <blue>223</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="Shadow">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>0</red>
+                       <green>0</green>
+                       <blue>0</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="AlternateBase">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>223</red>
+                       <green>223</green>
+                       <blue>223</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="ToolTipBase">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>255</red>
+                       <green>255</green>
+                       <blue>220</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                    <colorrole role="ToolTipText">
+                     <brush brushstyle="SolidPattern">
+                      <color alpha="255">
+                       <red>0</red>
+                       <green>0</green>
+                       <blue>0</blue>
+                      </color>
+                     </brush>
+                    </colorrole>
+                   </disabled>
+                  </palette>
+                 </property>
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;ACES Metadata File Basic Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="textFormat">
+                  <enum>Qt::AutoText</enum>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="17" column="0">
+                <widget class="QLabel" name="ANALYSISPanel_Info_Sequence_Label">
+                 <property name="text">
+                  <string>Sequence</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="17" column="1" colspan="3">
+                <widget class="QLineEdit" name="ANALYSISPanel_Info_Sequence_LineEdit">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="1" colspan="3">
+                <widget class="QLineEdit" name="ANALYSISPanel_Info_AMFUUID_LineEdit">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="12" column="0">
+                <widget class="QLabel" name="ANALYSISPanel_Info_CilpID_Label">
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt; Clip ID&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="1" colspan="3">
+                <widget class="QLineEdit" name="ANALYSISPanel_Info_EmailAddress_LineEdit">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QLabel" name="ANALYSISPanel_Info_AMFInfo_Label">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt; AMF Info&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="0">
+                <widget class="QLabel" name="ANALYSISPanel_Info_Name_Label">
+                 <property name="text">
+                  <string>Name</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="12" column="1" colspan="3">
+                <spacer name="horizontalSpacer_7">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="18" column="2">
+                <widget class="QLineEdit" name="ANALYSISPanel_Info_Sequence_2Min_LineEdit">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="0">
+                <spacer name="verticalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="16" column="0">
+                <widget class="QLabel" name="ANALYSISPanel_Info_FilePath_Label">
+                 <property name="text">
+                  <string>File Path</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="14" column="0">
+                <widget class="QLabel" name="ANALYSISPanel_Info_CilpName_Label">
+                 <property name="text">
+                  <string>Clip Name</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QLabel" name="label_34">
+                 <property name="text">
+                  <string>CreationTime：</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="3">
+                <widget class="QLabel" name="label_35">
+                 <property name="text">
+                  <string>ModificationTime：</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_8">
+           <attribute name="title">
+            <string>Pipeline</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_16" columnstretch="2,8">
+            <item row="0" column="1">
+             <layout class="QVBoxLayout" name="verticalLayout_4" stretch="2,6">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                 <widget class="QOpenGLWidget" name="openGLWidget_19"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_3">
+                <item>
+                 <widget class="QTabWidget" name="tabWidget_4">
+                  <property name="currentIndex">
+                   <number>0</number>
+                  </property>
+                  <widget class="QWidget" name="tab_3">
+                   <attribute name="title">
+                    <string>Image</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_17">
+                    <item row="0" column="0">
+                     <widget class="QOpenGLWidget" name="openGLWidget_3"/>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tab_4">
+                   <attribute name="title">
+                    <string>Cube</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_18">
+                    <item row="0" column="0">
+                     <widget class="QOpenGLWidget" name="openGLWidget_4"/>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tab_10">
+                   <attribute name="title">
+                    <string>Curve</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_19">
+                    <item row="0" column="0">
+                     <widget class="QOpenGLWidget" name="openGLWidget_5"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="0">
+             <widget class="QToolBox" name="toolBox_4">
+              <widget class="QWidget" name="ANALYSISPanel_Pipeline_Lift_PipelineInfo_Widget">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>98</width>
+                 <height>28</height>
+                </rect>
+               </property>
+               <attribute name="label">
+                <string>Pipeline Info</string>
+               </attribute>
+              </widget>
+              <widget class="QWidget" name="ANALYSISPanel_Pipeline_Lift_IDT_Widget">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>98</width>
+                 <height>28</height>
+                </rect>
+               </property>
+               <attribute name="label">
+                <string>IDT</string>
+               </attribute>
+              </widget>
+              <widget class="QWidget" name="ANALYSISPanel_Pipeline_Lift_LMT_Widget">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>98</width>
+                 <height>28</height>
+                </rect>
+               </property>
+               <attribute name="label">
+                <string>LMT</string>
+               </attribute>
+              </widget>
+              <widget class="QWidget" name="ANALYSISPanel_Pipeline_Lift_ODT_Widget">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>98</width>
+                 <height>28</height>
+                </rect>
+               </property>
+               <attribute name="label">
+                <string>ODT</string>
+               </attribute>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_9">
+           <attribute name="title">
+            <string> Archived Pipeline</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_26" columnstretch="2,8">
+            <item row="0" column="0">
+             <widget class="QWidget" name="widget_5" native="true"/>
+            </item>
+            <item row="0" column="1">
+             <layout class="QVBoxLayout" name="verticalLayout_8" stretch="2,6">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_9">
+                <item>
+                 <widget class="QOpenGLWidget" name="openGLWidget_18"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_10">
+                <item>
+                 <widget class="QTabWidget" name="tabWidget_6">
+                  <property name="currentIndex">
+                   <number>0</number>
+                  </property>
+                  <widget class="QWidget" name="tab_14">
+                   <attribute name="title">
+                    <string>Image</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_23">
+                    <item row="0" column="0">
+                     <widget class="QOpenGLWidget" name="openGLWidget_9"/>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tab_15">
+                   <attribute name="title">
+                    <string>Cube</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_24">
+                    <item row="0" column="0">
+                     <widget class="QOpenGLWidget" name="openGLWidget_10"/>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tab_16">
+                   <attribute name="title">
+                    <string>Curve</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_25">
+                    <item row="0" column="0">
+                     <widget class="QOpenGLWidget" name="openGLWidget_11"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="MODIFICATIONPanel">
+       <attribute name="title">
+        <string>Modification Panel</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_37">
+        <item row="0" column="0">
+         <widget class="QTabWidget" name="tabWidget_7">
+          <property name="tabPosition">
+           <enum>QTabWidget::South</enum>
+          </property>
+          <property name="tabShape">
+           <enum>QTabWidget::Triangular</enum>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_17">
+           <attribute name="title">
+            <string>AMF / Clip Info</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_27">
+            <item row="1" column="0">
+             <widget class="QScrollArea" name="scrollArea_3">
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_3">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>748</width>
+                 <height>618</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_28">
+                <item row="10" column="1">
+                 <widget class="QLabel" name="label_53">
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt; Clip ID&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="0" colspan="2">
+                 <widget class="QLabel" name="label_54">
+                  <property name="text">
+                   <string>AMF UUID</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="13" column="0" colspan="2">
+                 <widget class="QLabel" name="label_55">
+                  <property name="text">
+                   <string>Clip UUID</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="14" column="0" colspan="2">
+                 <widget class="QLabel" name="label_56">
+                  <property name="text">
+                   <string>File path</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0" colspan="4">
+                 <widget class="QLabel" name="label_57">
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt; AMF Info&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="3" colspan="3">
+                 <widget class="QTextEdit" name="textEdit_11"/>
+                </item>
+                <item row="12" column="0" colspan="2">
+                 <widget class="QLabel" name="label_58">
+                  <property name="text">
+                   <string>Clip name</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="3" colspan="3">
+                 <widget class="QLineEdit" name="lineEdit_43"/>
+                </item>
+                <item row="4" column="0" colspan="3">
+                 <widget class="QLabel" name="label_59">
+                  <property name="text">
+                   <string>Name</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2" colspan="4">
+                 <widget class="QLabel" name="label_60">
+                  <property name="palette">
+                   <palette>
+                    <active>
+                     <colorrole role="WindowText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Button">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>223</red>
+                        <green>223</green>
+                        <blue>223</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Light">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Midlight">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>239</red>
+                        <green>239</green>
+                        <blue>239</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Dark">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>111</red>
+                        <green>111</green>
+                        <blue>111</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Mid">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>148</red>
+                        <green>148</green>
+                        <blue>148</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Text">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="BrightText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="ButtonText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Base">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Window">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>223</red>
+                        <green>223</green>
+                        <blue>223</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Shadow">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="AlternateBase">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>239</red>
+                        <green>239</green>
+                        <blue>239</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="ToolTipBase">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>220</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="ToolTipText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                    </active>
+                    <inactive>
+                     <colorrole role="WindowText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Button">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>223</red>
+                        <green>223</green>
+                        <blue>223</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Light">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Midlight">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>239</red>
+                        <green>239</green>
+                        <blue>239</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Dark">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>111</red>
+                        <green>111</green>
+                        <blue>111</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Mid">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>148</red>
+                        <green>148</green>
+                        <blue>148</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Text">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="BrightText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="ButtonText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Base">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Window">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>223</red>
+                        <green>223</green>
+                        <blue>223</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Shadow">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="AlternateBase">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>239</red>
+                        <green>239</green>
+                        <blue>239</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="ToolTipBase">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>220</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="ToolTipText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                    </inactive>
+                    <disabled>
+                     <colorrole role="WindowText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>111</red>
+                        <green>111</green>
+                        <blue>111</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Button">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>223</red>
+                        <green>223</green>
+                        <blue>223</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Light">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Midlight">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>239</red>
+                        <green>239</green>
+                        <blue>239</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Dark">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>111</red>
+                        <green>111</green>
+                        <blue>111</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Mid">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>148</red>
+                        <green>148</green>
+                        <blue>148</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Text">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>111</red>
+                        <green>111</green>
+                        <blue>111</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="BrightText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="ButtonText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>111</red>
+                        <green>111</green>
+                        <blue>111</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Base">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>223</red>
+                        <green>223</green>
+                        <blue>223</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Window">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>223</red>
+                        <green>223</green>
+                        <blue>223</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Shadow">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="AlternateBase">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>223</red>
+                        <green>223</green>
+                        <blue>223</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="ToolTipBase">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>220</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="ToolTipText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>0</red>
+                        <green>0</green>
+                        <blue>0</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                    </disabled>
+                   </palette>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;ACES Metadata File basic information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="textFormat">
+                   <enum>Qt::AutoText</enum>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="3" colspan="3">
+                 <widget class="QLineEdit" name="lineEdit_44"/>
+                </item>
+                <item row="5" column="0" colspan="2">
+                 <widget class="QLabel" name="label_61">
+                  <property name="text">
+                   <string>Email address</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="15" column="0" colspan="2">
+                 <widget class="QLabel" name="label_62">
+                  <property name="text">
+                   <string>Sequence</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="3" colspan="3">
+                 <widget class="QLineEdit" name="lineEdit_45"/>
+                </item>
+                <item row="7" column="1" rowspan="3" colspan="5">
+                 <widget class="Line" name="line_5">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="16" column="3">
+                 <widget class="QLineEdit" name="lineEdit_46"/>
+                </item>
+                <item row="16" column="5">
+                 <widget class="QLineEdit" name="lineEdit_47"/>
+                </item>
+                <item row="16" column="4">
+                 <widget class="QLineEdit" name="lineEdit_48"/>
+                </item>
+                <item row="15" column="3" colspan="3">
+                 <widget class="QLineEdit" name="lineEdit_49"/>
+                </item>
+                <item row="14" column="3" colspan="3">
+                 <widget class="QLineEdit" name="lineEdit_50"/>
+                </item>
+                <item row="13" column="3" colspan="3">
+                 <widget class="QLineEdit" name="lineEdit_51"/>
+                </item>
+                <item row="12" column="3" colspan="3">
+                 <widget class="QLineEdit" name="lineEdit_52"/>
+                </item>
+                <item row="1" column="0" colspan="6">
+                 <widget class="Line" name="line_6">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="11" column="3" colspan="3">
+                 <widget class="QTextEdit" name="textEdit_12"/>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_18">
+           <attribute name="title">
+            <string>Pipeline</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_29" columnstretch="2,8">
+            <item row="0" column="1">
+             <layout class="QVBoxLayout" name="verticalLayout_11" stretch="2,6">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_12">
+                <item>
+                 <widget class="QOpenGLWidget" name="openGLWidget_20"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_13">
+                <item>
+                 <widget class="QTabWidget" name="tabWidget_8">
+                  <property name="currentIndex">
+                   <number>0</number>
+                  </property>
+                  <widget class="QWidget" name="tab_19">
+                   <attribute name="title">
+                    <string>Image</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_30">
+                    <item row="0" column="0">
+                     <widget class="QOpenGLWidget" name="openGLWidget_12"/>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tab_20">
+                   <attribute name="title">
+                    <string>Cube</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_31">
+                    <item row="0" column="0">
+                     <widget class="QOpenGLWidget" name="openGLWidget_13"/>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tab_21">
+                   <attribute name="title">
+                    <string>Curve</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_32">
+                    <item row="0" column="0">
+                     <widget class="QOpenGLWidget" name="openGLWidget_14"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="0">
+             <widget class="QWidget" name="widget_6" native="true"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_22">
+           <attribute name="title">
+            <string> Archived Pipeline</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_33" columnstretch="2,8">
+            <item row="0" column="0">
+             <widget class="QScrollArea" name="scrollArea_4">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_4">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>98</width>
+                 <height>28</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <layout class="QVBoxLayout" name="verticalLayout_14" stretch="2,6">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_15">
+                <item>
+                 <widget class="QOpenGLWidget" name="openGLWidget_21"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_16">
+                <item>
+                 <widget class="QTabWidget" name="tabWidget_9">
+                  <property name="currentIndex">
+                   <number>0</number>
+                  </property>
+                  <widget class="QWidget" name="tab_23">
+                   <attribute name="title">
+                    <string>Image</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_34">
+                    <item row="0" column="0">
+                     <widget class="QOpenGLWidget" name="openGLWidget_15"/>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tab_24">
+                   <attribute name="title">
+                    <string>Cube</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_35">
+                    <item row="0" column="0">
+                     <widget class="QOpenGLWidget" name="openGLWidget_16"/>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tab_25">
+                   <attribute name="title">
+                    <string>Curve</string>
+                   </attribute>
+                   <layout class="QGridLayout" name="gridLayout_36">
+                    <item row="0" column="0">
+                     <widget class="QOpenGLWidget" name="openGLWidget_17"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="OUTPUTPanel">
+       <attribute name="title">
+        <string>Output Panel</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_5" rowstretch="0,0" columnstretch="1,0,0">
+          <item row="0" column="0" rowspan="2" colspan="2">
+           <widget class="QWidget" name="widget_2" native="true">
+            <layout class="QGridLayout" name="gridLayout_9">
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="checkBox_2">
+               <property name="text">
+                <string>Disable</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QScrollArea" name="scrollArea">
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>109</width>
+                  <height>1008</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_13">
+                 <item row="0" column="0">
+                  <layout class="QGridLayout" name="gridLayout_12">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_2">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="lineEdit_2"/>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_3">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="lineEdit_3"/>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_4">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QLineEdit" name="lineEdit_4"/>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QLabel" name="label_5">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QLineEdit" name="lineEdit_5"/>
+                   </item>
+                   <item row="4" column="0">
+                    <widget class="QLabel" name="label_6">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="1">
+                    <widget class="QLineEdit" name="lineEdit_6"/>
+                   </item>
+                   <item row="5" column="0">
+                    <widget class="QLabel" name="label_9">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="5" column="1">
+                    <widget class="QLineEdit" name="lineEdit_8"/>
+                   </item>
+                   <item row="6" column="0">
+                    <widget class="QLabel" name="label_8">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="6" column="1">
+                    <widget class="QLineEdit" name="lineEdit_9"/>
+                   </item>
+                   <item row="7" column="0">
+                    <widget class="QLabel" name="label_7">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="7" column="1">
+                    <widget class="QLineEdit" name="lineEdit_7"/>
+                   </item>
+                   <item row="8" column="0">
+                    <widget class="QLabel" name="label_10">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="8" column="1">
+                    <widget class="QLineEdit" name="lineEdit_11"/>
+                   </item>
+                   <item row="9" column="0">
+                    <widget class="QLabel" name="label_16">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="9" column="1">
+                    <widget class="QLineEdit" name="lineEdit_15"/>
+                   </item>
+                   <item row="10" column="0">
+                    <widget class="QLabel" name="label_13">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="10" column="1">
+                    <widget class="QLineEdit" name="lineEdit_17"/>
+                   </item>
+                   <item row="11" column="0">
+                    <widget class="QLabel" name="label_14">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="11" column="1">
+                    <widget class="QLineEdit" name="lineEdit_13"/>
+                   </item>
+                   <item row="12" column="0">
+                    <widget class="QLabel" name="label_11">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="12" column="1">
+                    <widget class="QLineEdit" name="lineEdit_14"/>
+                   </item>
+                   <item row="13" column="0">
+                    <widget class="QLabel" name="label_17">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="13" column="1">
+                    <widget class="QLineEdit" name="lineEdit_16"/>
+                   </item>
+                   <item row="14" column="0">
+                    <widget class="QLabel" name="label_15">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="14" column="1">
+                    <widget class="QLineEdit" name="lineEdit_10"/>
+                   </item>
+                   <item row="15" column="0">
+                    <widget class="QLabel" name="label_12">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="15" column="1">
+                    <widget class="QLineEdit" name="lineEdit_12"/>
+                   </item>
+                   <item row="16" column="0">
+                    <widget class="QLabel" name="label_29">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="16" column="1">
+                    <widget class="QLineEdit" name="lineEdit_20"/>
+                   </item>
+                   <item row="17" column="0">
+                    <widget class="QLabel" name="label_31">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="17" column="1">
+                    <widget class="QLineEdit" name="lineEdit_28"/>
+                   </item>
+                   <item row="18" column="0">
+                    <widget class="QLabel" name="label_27">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="18" column="1">
+                    <widget class="QLineEdit" name="lineEdit_24"/>
+                   </item>
+                   <item row="19" column="0">
+                    <widget class="QLabel" name="label_18">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="19" column="1">
+                    <widget class="QLineEdit" name="lineEdit_26"/>
+                   </item>
+                   <item row="20" column="0">
+                    <widget class="QLabel" name="label_30">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="20" column="1">
+                    <widget class="QLineEdit" name="lineEdit_30"/>
+                   </item>
+                   <item row="21" column="0">
+                    <widget class="QLabel" name="label_19">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="21" column="1">
+                    <widget class="QLineEdit" name="lineEdit_31"/>
+                   </item>
+                   <item row="22" column="0">
+                    <widget class="QLabel" name="label_22">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="22" column="1">
+                    <widget class="QLineEdit" name="lineEdit_18"/>
+                   </item>
+                   <item row="23" column="0">
+                    <widget class="QLabel" name="label_25">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="23" column="1">
+                    <widget class="QLineEdit" name="lineEdit_19"/>
+                   </item>
+                   <item row="24" column="0">
+                    <widget class="QLabel" name="label_28">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="24" column="1">
+                    <widget class="QLineEdit" name="lineEdit_23"/>
+                   </item>
+                   <item row="25" column="0">
+                    <widget class="QLabel" name="label_21">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="25" column="1">
+                    <widget class="QLineEdit" name="lineEdit_27"/>
+                   </item>
+                   <item row="26" column="0">
+                    <widget class="QLabel" name="label_26">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="26" column="1">
+                    <widget class="QLineEdit" name="lineEdit_32"/>
+                   </item>
+                   <item row="27" column="0">
+                    <widget class="QLabel" name="label_20">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="27" column="1">
+                    <widget class="QLineEdit" name="lineEdit_33"/>
+                   </item>
+                   <item row="28" column="0">
+                    <widget class="QLabel" name="label_24">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="28" column="1">
+                    <widget class="QLineEdit" name="lineEdit_29"/>
+                   </item>
+                   <item row="29" column="0">
+                    <widget class="QLabel" name="label_23">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="29" column="1">
+                    <widget class="QLineEdit" name="lineEdit_25"/>
+                   </item>
+                   <item row="30" column="0">
+                    <widget class="QLabel" name="label_33">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="30" column="1">
+                    <widget class="QLineEdit" name="lineEdit_22"/>
+                   </item>
+                   <item row="31" column="0">
+                    <widget class="QLabel" name="label_32">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="31" column="1">
+                    <widget class="QLineEdit" name="lineEdit_21"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetMinimumSize</enum>
+            </property>
+            <item>
+             <layout class="QGridLayout" name="gridLayout_6" columnstretch="1,0,0">
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="verticalSpacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QLabel" name="OUTPUTPanel_SaveAs_Label">
+                <property name="text">
+                 <string>Save as</string>
+                </property>
+                <property name="textInteractionFlags">
+                 <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse</set>
+                </property>
+                <property name="buddy">
+                 <cstring>OUTPUTPanel_SaveAs_LineEdit</cstring>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="OUTPUTPanel_PathSelect_Label">
+                <property name="text">
+                 <string>Path</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1" colspan="2">
+               <widget class="QLineEdit" name="OUTPUTPanel_SaveAs_LineEdit">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QComboBox" name="OUTPUTPanel_PathSelect_ComboBox"/>
+              </item>
+              <item row="1" column="2">
+               <widget class="QPushButton" name="OUTPUTPanel_PathSelect_PushButton">
+                <property name="text">
+                 <string>Select</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="Line" name="line_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QGridLayout" name="gridLayout_7" columnstretch="1,0,0">
+              <item row="0" column="1" colspan="2">
+               <widget class="QComboBox" name="OUTPUTPanel_TypeSelect_ComboBox">
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="OUTPUTPanel_TypeSelect_Label">
+                <property name="text">
+                 <string>Type</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QPushButton" name="OUTPUTPanel_FormatSelect_PushButton">
+                <property name="text">
+                 <string>Save</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QComboBox" name="OUTPUTPanel_FormatSelect_ComboBox"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="OUTPUTPanel_FormatSelect_Label">
+                <property name="text">
+                 <string>Format</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="2">
+           <widget class="QOpenGLWidget" name="openGLWidget_2">
+            <property name="cursor">
+             <cursorShape>OpenHandCursor</cursorShape>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>643</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAnalysis">
+    <property name="title">
+     <string>Analysis</string>
+    </property>
+    <addaction name="actionAnalysis_Panel"/>
+   </widget>
+   <widget class="QMenu" name="menuImport_File">
+    <property name="title">
+     <string>Import File</string>
+    </property>
+    <addaction name="actionImport_file"/>
+   </widget>
+   <widget class="QMenu" name="menuModification">
+    <property name="title">
+     <string>Modification</string>
+    </property>
+    <addaction name="actionModification_Panel"/>
+   </widget>
+   <widget class="QMenu" name="menuOutput">
+    <property name="title">
+     <string>Output</string>
+    </property>
+    <addaction name="actionOutput"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAMF_Analyst"/>
+    <addaction name="separator"/>
+    <addaction name="actionCheck_for_update"/>
+    <addaction name="actionAMF_Document"/>
+   </widget>
+   <addaction name="menuImport_File"/>
+   <addaction name="menuAnalysis"/>
+   <addaction name="menuModification"/>
+   <addaction name="menuOutput"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAMF_Analyst">
+   <property name="text">
+    <string>AMF Analyst</string>
+   </property>
+  </action>
+  <action name="actionCheck_for_update">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Check for update</string>
+   </property>
+  </action>
+  <action name="actionAMF_Document">
+   <property name="text">
+    <string>AMF's Document</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta+Ctrl+Alt+D</string>
+   </property>
+  </action>
+  <action name="actionOutput">
+   <property name="text">
+    <string>Output Panel</string>
+   </property>
+  </action>
+  <action name="actionModification_Panel">
+   <property name="text">
+    <string>Modification Panel</string>
+   </property>
+  </action>
+  <action name="actionAnalysis_Panel">
+   <property name="text">
+    <string>Analysis Panel</string>
+   </property>
+  </action>
+  <action name="actionImport_file">
+   <property name="text">
+    <string>Import File Panel</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>ANALYSISPanel_Info_AMFInfo_TextEdit</tabstop>
+  <tabstop>ANALYSISPanel_Info_Name_LineEdit</tabstop>
+  <tabstop>ANALYSISPanel_Info_EmailAddress_LineEdit</tabstop>
+  <tabstop>ANALYSISPanel_Info_AMFUUID_LineEdit</tabstop>
+  <tabstop>ANALYSISPanel_Info_CilpID_TextEdit</tabstop>
+  <tabstop>ANALYSISPanel_Info_CilpName_LineEdit</tabstop>
+  <tabstop>ANALYSISPanel_Info_CilpUUID_LineEdit</tabstop>
+  <tabstop>ANALYSISPanel_Info_FilePath_LineEdit</tabstop>
+  <tabstop>ANALYSISPanel_Info_Sequence_LineEdit</tabstop>
+  <tabstop>ANALYSISPanel_Info_Sequence_1Idx_LineEdit</tabstop>
+  <tabstop>ANALYSISPanel_Info_Sequence_2Min_LineEdit</tabstop>
+  <tabstop>ANALYSISPanel_Info_Sequence_3Max_LineEdit</tabstop>
+  <tabstop>IMPORTPanel_Right_QTabWidget</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>tableWidget</tabstop>
+  <tabstop>listView</tabstop>
+  <tabstop>tabWidget_3</tabstop>
+  <tabstop>tabWidget_4</tabstop>
+  <tabstop>tabWidget_6</tabstop>
+  <tabstop>tabWidget_7</tabstop>
+  <tabstop>scrollArea_3</tabstop>
+  <tabstop>textEdit_11</tabstop>
+  <tabstop>lineEdit_43</tabstop>
+  <tabstop>lineEdit_44</tabstop>
+  <tabstop>lineEdit_45</tabstop>
+  <tabstop>lineEdit_46</tabstop>
+  <tabstop>lineEdit_47</tabstop>
+  <tabstop>lineEdit_48</tabstop>
+  <tabstop>lineEdit_49</tabstop>
+  <tabstop>lineEdit_50</tabstop>
+  <tabstop>lineEdit_51</tabstop>
+  <tabstop>lineEdit_52</tabstop>
+  <tabstop>textEdit_12</tabstop>
+  <tabstop>tabWidget_8</tabstop>
+  <tabstop>scrollArea_4</tabstop>
+  <tabstop>tabWidget_9</tabstop>
+  <tabstop>checkBox_2</tabstop>
+  <tabstop>scrollArea</tabstop>
+  <tabstop>lineEdit_2</tabstop>
+  <tabstop>lineEdit_3</tabstop>
+  <tabstop>lineEdit_4</tabstop>
+  <tabstop>lineEdit_5</tabstop>
+  <tabstop>lineEdit_6</tabstop>
+  <tabstop>lineEdit_8</tabstop>
+  <tabstop>lineEdit_9</tabstop>
+  <tabstop>lineEdit_7</tabstop>
+  <tabstop>lineEdit_11</tabstop>
+  <tabstop>lineEdit_15</tabstop>
+  <tabstop>lineEdit_17</tabstop>
+  <tabstop>lineEdit_13</tabstop>
+  <tabstop>lineEdit_14</tabstop>
+  <tabstop>lineEdit_16</tabstop>
+  <tabstop>lineEdit_10</tabstop>
+  <tabstop>lineEdit_12</tabstop>
+  <tabstop>lineEdit_20</tabstop>
+  <tabstop>lineEdit_28</tabstop>
+  <tabstop>lineEdit_24</tabstop>
+  <tabstop>lineEdit_26</tabstop>
+  <tabstop>lineEdit_30</tabstop>
+  <tabstop>lineEdit_31</tabstop>
+  <tabstop>lineEdit_18</tabstop>
+  <tabstop>lineEdit_19</tabstop>
+  <tabstop>lineEdit_23</tabstop>
+  <tabstop>lineEdit_27</tabstop>
+  <tabstop>lineEdit_32</tabstop>
+  <tabstop>lineEdit_33</tabstop>
+  <tabstop>lineEdit_29</tabstop>
+  <tabstop>lineEdit_25</tabstop>
+  <tabstop>lineEdit_22</tabstop>
+  <tabstop>lineEdit_21</tabstop>
+  <tabstop>OUTPUTPanel_SaveAs_LineEdit</tabstop>
+  <tabstop>OUTPUTPanel_PathSelect_ComboBox</tabstop>
+  <tabstop>OUTPUTPanel_PathSelect_PushButton</tabstop>
+  <tabstop>OUTPUTPanel_TypeSelect_ComboBox</tabstop>
+  <tabstop>OUTPUTPanel_FormatSelect_PushButton</tabstop>
+  <tabstop>OUTPUTPanel_FormatSelect_ComboBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
