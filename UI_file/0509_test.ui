@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>988</width>
-    <height>1005</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -50,6 +50,9 @@
           </property>
           <item>
            <widget class="QTabWidget" name="IMPORTPanel_Right_QTabWidget">
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
             <property name="currentIndex">
              <number>0</number>
             </property>
@@ -59,7 +62,11 @@
              </attribute>
              <layout class="QGridLayout" name="gridLayout">
               <item row="0" column="0">
-               <widget class="QListView" name="listView"/>
+               <widget class="QListView" name="listView">
+                <property name="toolTipDuration">
+                 <number>-1</number>
+                </property>
+               </widget>
               </item>
              </layout>
             </widget>
@@ -151,7 +158,7 @@ AMAPS TuJingkai MaXuyi ZhuHongxuan
            <enum>QTabWidget::Triangular</enum>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="tab_7">
            <attribute name="title">
@@ -171,67 +178,38 @@ AMAPS TuJingkai MaXuyi ZhuHongxuan
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>870</width>
-                 <height>820</height>
+                 <width>780</width>
+                 <height>618</height>
                 </rect>
                </property>
-               <layout class="QGridLayout" name="gridLayout_15">
-                <item row="10" column="1">
-                 <widget class="QLabel" name="ANALYSISPanel_Info_CilpID_Label">
-                  <property name="text">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt; Clip ID&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <layout class="QGridLayout" name="gridLayout_15" columnminimumwidth="1,1,1,1,1,1">
+                <item row="0" column="5">
+                 <spacer name="horizontalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
                   </property>
-                 </widget>
-                </item>
-                <item row="6" column="0" colspan="2">
-                 <widget class="QLabel" name="ANALYSISPanel_Info_AMFUUID_Label">
-                  <property name="text">
-                   <string>AMF UUID</string>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
                   </property>
-                 </widget>
+                 </spacer>
                 </item>
-                <item row="13" column="0" colspan="2">
-                 <widget class="QLabel" name="ANALYSISPanel_Info_CilpUUID_Label">
-                  <property name="text">
-                   <string>Clip UUID</string>
+                <item row="0" column="1">
+                 <spacer name="horizontalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
                   </property>
-                 </widget>
-                </item>
-                <item row="14" column="0" colspan="2">
-                 <widget class="QLabel" name="ANALYSISPanel_Info_FilePath_Label">
-                  <property name="text">
-                   <string>File Path</string>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
                   </property>
-                 </widget>
+                 </spacer>
                 </item>
-                <item row="2" column="0" colspan="4">
-                 <widget class="QLabel" name="ANALYSISPanel_Info_AMFInfo_Label">
-                  <property name="text">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt; AMF Info&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="3" column="3" colspan="3">
-                 <widget class="QTextEdit" name="ANALYSISPanel_Info_AMFInfo_TextEdit"/>
-                </item>
-                <item row="12" column="0" colspan="2">
-                 <widget class="QLabel" name="ANALYSISPanel_Info_CilpName_Label">
-                  <property name="text">
-                   <string>Clip Name</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="5" column="3" colspan="3">
-                 <widget class="QLineEdit" name="ANALYSISPanel_Info_EmailAddress_LineEdit"/>
-                </item>
-                <item row="4" column="0" colspan="3">
-                 <widget class="QLabel" name="ANALYSISPanel_Info_Name_Label">
-                  <property name="text">
-                   <string>Name</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="2" colspan="4">
+                <item row="0" column="2" colspan="3">
                  <widget class="QLabel" name="ANALYSISPanel_Info_ACESMetadataFileBasicInformation_Label">
                   <property name="palette">
                    <palette>
@@ -659,22 +637,28 @@ AMAPS TuJingkai MaXuyi ZhuHongxuan
                   </property>
                  </widget>
                 </item>
+                <item row="10" column="1">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_CilpID_Label">
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt; Clip ID&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="3" colspan="3">
+                 <widget class="QTextEdit" name="ANALYSISPanel_Info_AMFInfo_TextEdit"/>
+                </item>
+                <item row="5" column="3" colspan="3">
+                 <widget class="QLineEdit" name="ANALYSISPanel_Info_EmailAddress_LineEdit"/>
+                </item>
+                <item row="4" column="0" colspan="3">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_Name_Label">
+                  <property name="text">
+                   <string>Name</string>
+                  </property>
+                 </widget>
+                </item>
                 <item row="6" column="3" colspan="3">
                  <widget class="QLineEdit" name="ANALYSISPanel_Info_AMFUUID_LineEdit"/>
-                </item>
-                <item row="5" column="0" colspan="2">
-                 <widget class="QLabel" name="ANALYSISPanel_Info_EmailAddress_Label">
-                  <property name="text">
-                   <string>Email Address</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="15" column="0" colspan="2">
-                 <widget class="QLabel" name="ANALYSISPanel_Info_Sequence_Label">
-                  <property name="text">
-                   <string>Sequence</string>
-                  </property>
-                 </widget>
                 </item>
                 <item row="4" column="3" colspan="3">
                  <widget class="QLineEdit" name="ANALYSISPanel_Info_Name_LineEdit"/>
@@ -716,6 +700,120 @@ AMAPS TuJingkai MaXuyi ZhuHongxuan
                 </item>
                 <item row="11" column="3" colspan="3">
                  <widget class="QTextEdit" name="ANALYSISPanel_Info_CilpID_TextEdit"/>
+                </item>
+                <item row="3" column="1">
+                 <spacer name="verticalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="2" column="0" colspan="3">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_AMFInfo_Label">
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt; AMF Info&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="3" colspan="3">
+                 <spacer name="horizontalSpacer_3">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="5" column="0" colspan="3">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_EmailAddress_Label">
+                  <property name="text">
+                   <string>Email Address</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="0" colspan="3">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_AMFUUID_Label">
+                  <property name="text">
+                   <string>AMF UUID</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="11" column="1">
+                 <spacer name="verticalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="10" column="3" colspan="3">
+                 <spacer name="horizontalSpacer_4">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="12" column="0" colspan="3">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_CilpName_Label">
+                  <property name="text">
+                   <string>Clip Name</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="13" column="0" colspan="3">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_CilpUUID_Label">
+                  <property name="text">
+                   <string>Clip UUID</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="14" column="0" colspan="3">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_FilePath_Label">
+                  <property name="text">
+                   <string>File Path</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="15" column="0" colspan="3">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_Sequence_Label">
+                  <property name="text">
+                   <string>Sequence</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="16" column="0" colspan="3">
+                 <spacer name="horizontalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
                 </item>
                </layout>
               </widget>
@@ -781,7 +879,28 @@ AMAPS TuJingkai MaXuyi ZhuHongxuan
              </layout>
             </item>
             <item row="0" column="0">
-             <widget class="QWidget" name="widget_4" native="true"/>
+             <widget class="QToolBox" name="toolBox_4">
+              <widget class="QWidget" name="ANALYSISPanel_Pipeline_Lift_PipelineInfo_Widget" native="true">
+               <attribute name="label">
+                <string>Pipeline Info</string>
+               </attribute>
+              </widget>
+              <widget class="QWidget" name="ANALYSISPanel_Pipeline_Lift_IDT_Widget">
+               <attribute name="label">
+                <string>IDT</string>
+               </attribute>
+              </widget>
+              <widget class="QWidget" name="ANALYSISPanel_Pipeline_Lift_LMT_Widget">
+               <attribute name="label">
+                <string>LMT</string>
+               </attribute>
+              </widget>
+              <widget class="QWidget" name="ANALYSISPanel_Pipeline_Lift_ODT_Widget">
+               <attribute name="label">
+                <string>ODT</string>
+               </attribute>
+              </widget>
+             </widget>
             </item>
            </layout>
           </widget>
@@ -865,7 +984,7 @@ AMAPS TuJingkai MaXuyi ZhuHongxuan
            <enum>QTabWidget::Triangular</enum>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="tab_17">
            <attribute name="title">
@@ -1606,7 +1725,7 @@ AMAPS TuJingkai MaXuyi ZhuHongxuan
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>621</width>
+                  <width>433</width>
                   <height>1008</height>
                  </rect>
                 </property>
@@ -2058,7 +2177,7 @@ AMAPS TuJingkai MaXuyi ZhuHongxuan
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>988</width>
+     <width>800</width>
      <height>22</height>
     </rect>
    </property>
