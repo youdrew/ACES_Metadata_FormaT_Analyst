@@ -17,7 +17,7 @@ class MAINsolfware(QMainWindow):
     def __init__(self,parent=None):
         super(MAINsolfware,self).__init__(parent)
 
-        loadUi('UI_file/0509_test.ui',self)
+        loadUi('UI_file/0510_test.ui',self)
         #test
 
         # self.setFixedSize(self.sizeHint())                         # 这一条是用来调整窗口大小的
