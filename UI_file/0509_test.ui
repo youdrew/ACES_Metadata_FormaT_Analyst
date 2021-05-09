@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>988</width>
-    <height>1128</height>
+    <height>1005</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -30,7 +30,7 @@
        <number>-1</number>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <property name="elideMode">
        <enum>Qt::ElideRight</enum>
@@ -171,68 +171,68 @@ AMAPS TuJingkai MaXuyi ZhuHongxuan
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>748</width>
-                 <height>618</height>
+                 <width>870</width>
+                 <height>820</height>
                 </rect>
                </property>
                <layout class="QGridLayout" name="gridLayout_15">
                 <item row="10" column="1">
-                 <widget class="QLabel" name="label_48">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_CilpID_Label">
                   <property name="text">
                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt; Clip ID&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                  </widget>
                 </item>
                 <item row="6" column="0" colspan="2">
-                 <widget class="QLabel" name="label_51">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_AMFUUID_Label">
                   <property name="text">
                    <string>AMF UUID</string>
                   </property>
                  </widget>
                 </item>
                 <item row="13" column="0" colspan="2">
-                 <widget class="QLabel" name="label_49">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_CilpUUID_Label">
                   <property name="text">
                    <string>Clip UUID</string>
                   </property>
                  </widget>
                 </item>
                 <item row="14" column="0" colspan="2">
-                 <widget class="QLabel" name="label_45">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_FilePath_Label">
                   <property name="text">
-                   <string>File path</string>
+                   <string>File Path</string>
                   </property>
                  </widget>
                 </item>
                 <item row="2" column="0" colspan="4">
-                 <widget class="QLabel" name="label_35">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_AMFInfo_Label">
                   <property name="text">
                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt; AMF Info&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                  </widget>
                 </item>
                 <item row="3" column="3" colspan="3">
-                 <widget class="QTextEdit" name="textEdit"/>
+                 <widget class="QTextEdit" name="ANALYSISPanel_Info_AMFInfo_TextEdit"/>
                 </item>
                 <item row="12" column="0" colspan="2">
-                 <widget class="QLabel" name="label_46">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_CilpName_Label">
                   <property name="text">
-                   <string>Clip name</string>
+                   <string>Clip Name</string>
                   </property>
                  </widget>
                 </item>
                 <item row="5" column="3" colspan="3">
-                 <widget class="QLineEdit" name="lineEdit_34"/>
+                 <widget class="QLineEdit" name="ANALYSISPanel_Info_EmailAddress_LineEdit"/>
                 </item>
                 <item row="4" column="0" colspan="3">
-                 <widget class="QLabel" name="label_47">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_Name_Label">
                   <property name="text">
                    <string>Name</string>
                   </property>
                  </widget>
                 </item>
                 <item row="0" column="2" colspan="4">
-                 <widget class="QLabel" name="label_34">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_ACESMetadataFileBasicInformation_Label">
                   <property name="palette">
                    <palette>
                     <active>
@@ -649,7 +649,7 @@ AMAPS TuJingkai MaXuyi ZhuHongxuan
                    </palette>
                   </property>
                   <property name="text">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;ACES Metadata File basic information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;ACES Metadata File Basic Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="textFormat">
                    <enum>Qt::AutoText</enum>
@@ -660,62 +660,62 @@ AMAPS TuJingkai MaXuyi ZhuHongxuan
                  </widget>
                 </item>
                 <item row="6" column="3" colspan="3">
-                 <widget class="QLineEdit" name="lineEdit_35"/>
+                 <widget class="QLineEdit" name="ANALYSISPanel_Info_AMFUUID_LineEdit"/>
                 </item>
                 <item row="5" column="0" colspan="2">
-                 <widget class="QLabel" name="label_52">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_EmailAddress_Label">
                   <property name="text">
-                   <string>Email address</string>
+                   <string>Email Address</string>
                   </property>
                  </widget>
                 </item>
                 <item row="15" column="0" colspan="2">
-                 <widget class="QLabel" name="label_50">
+                 <widget class="QLabel" name="ANALYSISPanel_Info_Sequence_Label">
                   <property name="text">
                    <string>Sequence</string>
                   </property>
                  </widget>
                 </item>
                 <item row="4" column="3" colspan="3">
-                 <widget class="QLineEdit" name="lineEdit"/>
+                 <widget class="QLineEdit" name="ANALYSISPanel_Info_Name_LineEdit"/>
                 </item>
                 <item row="7" column="1" rowspan="3" colspan="5">
-                 <widget class="Line" name="line_4">
+                 <widget class="Line" name="ANALYSISPanel_Info_Line_2">
                   <property name="orientation">
                    <enum>Qt::Horizontal</enum>
                   </property>
                  </widget>
                 </item>
                 <item row="16" column="3">
-                 <widget class="QLineEdit" name="lineEdit_39"/>
+                 <widget class="QLineEdit" name="ANALYSISPanel_Info_Sequence_1Idx_LineEdit"/>
                 </item>
                 <item row="16" column="5">
-                 <widget class="QLineEdit" name="lineEdit_41"/>
+                 <widget class="QLineEdit" name="ANALYSISPanel_Info_Sequence_3Max_LineEdit"/>
                 </item>
                 <item row="16" column="4">
-                 <widget class="QLineEdit" name="lineEdit_40"/>
+                 <widget class="QLineEdit" name="ANALYSISPanel_Info_Sequence_2Min_LineEdit"/>
                 </item>
                 <item row="15" column="3" colspan="3">
-                 <widget class="QLineEdit" name="lineEdit_42"/>
+                 <widget class="QLineEdit" name="ANALYSISPanel_Info_Sequence_LineEdit"/>
                 </item>
                 <item row="14" column="3" colspan="3">
-                 <widget class="QLineEdit" name="lineEdit_38"/>
+                 <widget class="QLineEdit" name="ANALYSISPanel_Info_FilePath_LineEdit"/>
                 </item>
                 <item row="13" column="3" colspan="3">
-                 <widget class="QLineEdit" name="lineEdit_37"/>
+                 <widget class="QLineEdit" name="ANALYSISPanel_Info_CilpUUID_LineEdit"/>
                 </item>
                 <item row="12" column="3" colspan="3">
-                 <widget class="QLineEdit" name="lineEdit_36"/>
+                 <widget class="QLineEdit" name="ANALYSISPanel_Info_CilpName_LineEdit"/>
                 </item>
                 <item row="1" column="0" colspan="6">
-                 <widget class="Line" name="line_3">
+                 <widget class="Line" name="ANALYSISPanel_Info_Line">
                   <property name="orientation">
                    <enum>Qt::Horizontal</enum>
                   </property>
                  </widget>
                 </item>
                 <item row="11" column="3" colspan="3">
-                 <widget class="QTextEdit" name="textEdit_10"/>
+                 <widget class="QTextEdit" name="ANALYSISPanel_Info_CilpID_TextEdit"/>
                 </item>
                </layout>
               </widget>
@@ -865,7 +865,7 @@ AMAPS TuJingkai MaXuyi ZhuHongxuan
            <enum>QTabWidget::Triangular</enum>
           </property>
           <property name="currentIndex">
-           <number>2</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="tab_17">
            <attribute name="title">
@@ -885,8 +885,8 @@ AMAPS TuJingkai MaXuyi ZhuHongxuan
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>870</width>
-                 <height>943</height>
+                 <width>748</width>
+                 <height>618</height>
                 </rect>
                </property>
                <layout class="QGridLayout" name="gridLayout_28">
@@ -1515,7 +1515,7 @@ AMAPS TuJingkai MaXuyi ZhuHongxuan
                  <x>0</x>
                  <y>0</y>
                  <width>170</width>
-                 <height>943</height>
+                 <height>820</height>
                 </rect>
                </property>
               </widget>
