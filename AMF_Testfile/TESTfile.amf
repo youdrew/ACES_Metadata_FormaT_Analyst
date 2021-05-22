@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<aces:acesMetadataFile xmlns:aces="urn:ampas:aces:amf:v1.0" xmlns:cdl="urn:ASC:CDL:v1.01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ampas:aces:amf:v1.0 file:acesMetadataFile.xsd" version="1.0">
+    <aces:amfInfo>
+        <aces:description>Creative by Yu_JingXuan, This just a test .amf,Include as much data define in S-2019-001 as possible.Multiple unbouned elements are specified, and I write them out as much as possible to test the robustness of the system.</aces:description>
+        <aces:author>
+        	<aces:name>Yu_JingXuan</aces:name>
+        	<aces:emailAddress>youdrewxuan@icloud.com</aces:emailAddress>
+        <aces:author>
+        <aces:author>
+        	<aces:name>S-2019-001</aces:name>
+        	<aces:emailAddress>https://community.acescentral.com/uploads/short-url/e4v6I9CuoMv5wauxqwnUkLvWjw6.pdf</aces:emailAddress>
+        <aces:author>		
+        <aces:dateTime>
+            <aces:creationDateTime>2020-12-06T00:55:38.87Z</aces:creationDateTime>
+            <aces:modificationDateTime>2021-05-22T00:55:38.87Z</aces:modificationDateTime>
+        </aces:dateTime>
+        <aces:uuid>urn:uuid:797c7cd8-4eb1-4f67-afce-af2b0a1d0285</aces:uuid>
+    </aces:amfInfo>
+
+
+    <aces:clipId>
+		<aces:clipName>A114C002_1908231N</aces:clipName>
+		<aces:file>A114C002_1908231N.mxf</aces:file>
+	</aces:clipId>
+
+
+    <aces:pipeline>
+        <aces:pipelineInfo>
+        	<aces:description>Creative by Yu_JingXuan, use sliverstack.This is the main pipeline of this .amf.</aces:description>
+    		<aces:author>
+        		<aces:name>Yu_JingXuan and S-2019-001</aces:name>
+        		<aces:emailAddress>youdrewxuan@icloud.com</aces:emailAddress>
+        	<aces:author>
+            <aces:dateTime>
+                <aces:creationDateTime>2020-12-06T00:55:38.87Z</aces:creationDateTime>
+                <aces:modificationDateTime>2021-05-22T00:55:38.87Z</aces:modificationDateTime>
+            </aces:dateTime>
+            <aces:uuid>urn:uuid:797c7cd8-4eb1-4f67-afce-af2b0a1d0778</aces:uuid>
+            <aces:systemVersion>
+                <aces:majorVersion>1</aces:majorVersion>
+                <aces:minorVersion>2</aces:minorVersion>
+                <aces:patchVersion>0</aces:patchVersion>
+            </aces:systemVersion>
+        </aces:pipelineInfo>
+        <aces:inputTransform applied="false">
+            <aces:description>ACES 1.0 Input - ARRI V3 LogC (EI800)</aces:description>
+            <aces:hash algorithm="http://www.w3.org/2001/04/xmldsig-more#md5">dc36ecb6c4837fa5fb78a5a1642d1dbf</aces:hash>
+            <aces:transformId>urn:ampas:aces:transformId:v1.5:IDT.ARRI.Alexa-v3-logC-EI800.a1.v2</aces:transformId>
+        </aces:inputTransform>
+        <aces:lookTransform applied="false">
+            <aces:cdlWorkingSpace>
+                <aces:toCdlWorkingSpace>
+                    <aces:description>ACES2065-1 to ACEScct</aces:description>
+                    <aces:transformId>urn:ampas:aces:transformId:v1.5:ACEScsc.Academy.ACES_to_ACEScct.a1.0.3</aces:transformId>
+                </aces:toCdlWorkingSpace>
+                <aces:fromCdlWorkingSpace>
+                    <aces:description>ACEScct to ACES2065-1</aces:description>
+                    <aces:transformId>urn:ampas:aces:transformId:v1.5:ACEScsc.Academy.ACEScct_to_ACES.a1.0.3</aces:transformId>
+                </aces:fromCdlWorkingSpace>
+            </aces:cdlWorkingSpace>
+            <cdl:SOPNode>
+                <cdl:Slope>0.854829 0.844765 0.821872</cdl:Slope>
+                <cdl:Offset>0.0466991 0.0567626 0.0796552</cdl:Offset>
+                <cdl:Power>1.0148 1.0148 1.0148</cdl:Power>
+            </cdl:SOPNode>
+            <cdl:SatNode>
+                <cdl:Saturation>1.0916</cdl:Saturation>
+            </cdl:SatNode>
+        </aces:lookTransform>
+		<aces:lookTransform applied="false">
+			<aces:description>CDL Grade</aces:description>
+			<aces:cdlWorkingSpace>
+				<aces:toCdlWorkingSpace>
+					<aces:transformID>urn:ampas:aces:transformID:v1.5:ACEScsc.Academy.ACES_to_ACEScct.a1.0.3</aces:transformID>
+				</aces:toCdlWorkingSpace>
+				<aces:fromCdlWorkingSpace>
+					<aces:transformID>urn:ampas:aces:transformID:v1.5:ACEScsc.Academy.ACEScct_to_ACES.a1.0.3</aces:transformID>
+				</aces:fromCdlWorkingSpace>
+			</aces:cdlWorkingSpace>
+			<cdl:ASC_SOP>
+				<cdl:Slope>1.0592 0.9869 0.9200</cdl:Slope>
+				<cdl:Offset>0.1393 0.1805 0.2207</cdl:Offset>
+				<cdl:Power>1.4688 1.5500 1.7187</cdl:Power>
+			</cdl:ASC_SOP>
+			<cdl:ASC_SAT>
+				<cdl:Saturation>1</cdl:Saturation>
+			</cdl:ASC_SAT>
+		</aces:lookTransform>
+        <aces:lookTransform applied="false">
+            <aces:description>LMT pointing to the associated CLF file.</aces:description>
+            <aces:file>Isabella_testfile.clf</aces:file>
+        </aces:lookTransform>
+        <aces:outputTransform>
+            <aces:referenceRenderingTransform>
+                <aces:description>ACES 1.0 - RRT</aces:description>
+                <aces:transformId>urn:ampas:aces:transformId:v1.5:RRT.a1.0.3</aces:transformId>
+            </aces:referenceRenderingTransform>
+            <aces:outputDeviceTransform>
+                <aces:description>ACES 1.0 Output - Rec.709</aces:description>
+                <aces:hash algorithm="http://www.w3.org/2001/04/xmldsig-more#md5">356cac3599cc1177a237b5dd86f86fb5</aces:hash>
+                <aces:transformId>urn:ampas:aces:transformId:v1.5:ODT.Academy.Rec709_100nits_dim.a1.0.3</aces:transformId>
+            </aces:outputDeviceTransform>
+        </aces:outputTransform>
+    </aces:pipeline>
+
+    <aces:archivedPipeline>
+    	<aces:pipelineInfo>
+			<aces:description>Example1 for AMF Implementation group</aces:description>
+			<aces:dateTime>
+				<aces:creationDateTime>2020-05-27T13:20:00+01:00</aces:creationDateTime>
+				<aces:modificationDateTime>2020-05-27T13:20:00+01:00</aces:modificationDateTime>
+			</aces:dateTime>
+			<aces:systemVersion>
+				<aces:majorVersion>1</aces:majorVersion>
+				<aces:minorVersion>2</aces:minorVersion>
+				<aces:patchVersion>0</aces:patchVersion>
+			</aces:systemVersion>
+		</aces:pipelineInfo>
+		<aces:inputTransform applied="false">
+			<aces:description>Input Transform for Venice, S-Log3, S-Gamma3</aces:description>
+			<aces:hash algorithm="http://www.w3.org/2001/04/xmlenc#sha256">6d4a373c2d360cc3503b2cbaa233fd522a82cae8b74c7574683f938dd37794db...</aces:hash>
+			<aces:transformID>urn:ampas:aces:transformId:v1.5:IDT.Sony.Venice_SLog3_SGamut3.a1.v1</aces:transformID>
+		</aces:inputTransform>
+		<aces:lookTransform applied="false">
+			<aces:description>CDL Grade</aces:description>
+			<aces:cdlWorkingSpace>
+				<aces:toCdlWorkingSpace>
+					<aces:transformID>urn:ampas:aces:transformId:v1.5:ACEScsc.Academy.ACES_to_ACEScct.a1.0.3</aces:transformID>
+				</aces:toCdlWorkingSpace>
+				<aces:fromCdlWorkingSpace>
+					<aces:transformID>urn:ampas:aces:transformId:v1.5:ACEScsc.Academy.ACEScct_to_ACES.a1.0.3</aces:transformID>
+				</aces:fromCdlWorkingSpace>
+			</aces:cdlWorkingSpace>
+			<cdl:ASC_SOP>
+				<cdl:Slope>1.0808 1.0808 1.0808</cdl:Slope>
+				<cdl:Offset>-0.0432 -0.0432 -0.0432</cdl:Offset>
+				<cdl:Power>1.0223 1.0223 1.0223</cdl:Power>
+			</cdl:ASC_SOP>
+			<cdl:ASC_SAT>
+				<cdl:Saturation>1.0300</cdl:Saturation>
+			</cdl:ASC_SAT>
+		</aces:lookTransform>
+		<aces:outputTransform>
+			<aces:referenceRenderingTransform>
+				<aces:description>ACES v1.0.3 RRT</aces:description>
+				<aces:hash algorithm="http://www.w3.org/2001/04/xmlenc#sha256">c81af4fb4a22ee0353308e4582708951df4682bf73f838c24bf44e585fc3bb61</aces:hash>
+				<aces:transformID>urn:ampas:aces:transformId:v1.5:RRT.a1.0.3</aces:transformID>
+			</aces:referenceRenderingTransform>
+			<aces:outputDeviceTransform>
+				<aces:description>Rec.709, 100nits, dim surround</aces:description>
+				<aces:hash algorithm="http://www.w3.org/2000/09/xmldsig#sha1">efd279a82c2d52ee8c49dc0793499dc86bb1a4a3fa0dfb420d59c2814c55aea6</aces:hash>
+				<aces:transformID>urn:ampas:aces:transformId:v1.5:ODT.Academy.Rec709_100nits_dim.a1.0.3</aces:transformID>
+			</aces:outputDeviceTransform>
+		</aces:outputTransform>
+   </aces:archivedPipeline>
+
+   <aces:archivedPipeline>
+		<aces:pipelineInfo>
+			<aces:description>Example2 for AMF Implementation group</aces:description>
+			<aces:dateTime>
+				<aces:creationDateTime>2020-05-27T13:20:00+01:00</aces:creationDateTime>
+				<aces:modificationDateTime>2020-05-27T13:20:00+01:00</aces:modificationDateTime>
+			</aces:dateTime>
+			<aces:systemVersion>
+				<aces:majorVersion>1</aces:majorVersion>
+				<aces:minorVersion>2</aces:minorVersion>
+				<aces:patchVersion>0</aces:patchVersion>
+			</aces:systemVersion>
+		</aces:pipelineInfo>
+		<aces:inputTransform applied="false">
+			<aces:description>IDT for Alexa v3, LogC, EI 800</aces:description>
+			<aces:hash algorithm="http://www.w3.org/2001/04/xmlenc#sha256">c07d706c70e9e064115113fbc0742f585eee39f63730d9056092404fe8212f40...</aces:hash>
+			<aces:transformID>urn:ampas:aces:transformId:v1.5:IDT.ARRI.Alexa-v3-logC-EI800.a1.v2</aces:transformID>
+		</aces:inputTransform>
+		<aces:lookTransform applied="false">
+			<aces:description>CDL Grade</aces:description>
+			<aces:cdlWorkingSpace>
+				<aces:toCdlWorkingSpace>
+					<aces:transformID>urn:ampas:aces:transformId:v1.5:ACEScsc.Academy.ACES_to_ACEScct.a1.0.3</aces:transformID>
+				</aces:toCdlWorkingSpace>
+				<aces:fromCdlWorkingSpace>
+					<aces:transformID>urn:ampas:aces:transformId:v1.5:ACEScsc.Academy.ACEScct_to_ACES.a1.0.3</aces:transformID>
+				</aces:fromCdlWorkingSpace>
+			</aces:cdlWorkingSpace>
+			<cdl:ASC_SOP>
+				<cdl:Slope>0.8108 0.8224 0.8429</cdl:Slope>
+				<cdl:Offset>0.0326 0.0582 0.0555</cdl:Offset>
+				<cdl:Power>1.0099 1.0322 1.0124</cdl:Power>
+			</cdl:ASC_SOP>
+			<cdl:ASC_SAT>
+				<cdl:Saturation>1.1000</cdl:Saturation>
+			</cdl:ASC_SAT>
+		</aces:lookTransform>
+		<aces:outputTransform>
+			<aces:referenceRenderingTransform>
+				<aces:description>ACES v1.0.3 RRT</aces:description>
+				<aces:hash algorithm="http://www.w3.org/2001/04/xmlenc#sha256">c81af4fb4a22ee0353308e4582708951df4682bf73f838c24bf44e585fc3bb61</aces:hash>
+				<aces:transformID>urn:ampas:aces:transformId:v1.5:RRT.a1.0.3</aces:transformID>
+			</aces:referenceRenderingTransform>
+			<aces:outputDeviceTransform>
+				<aces:description>Rec.709, 100nits, dim surround</aces:description>
+				<aces:hash algorithm="http://www.w3.org/2000/09/xmldsig#sha1">efd279a82c2d52ee8c49dc0793499dc86bb1a4a3fa0dfb420d59c2814c55aea6</aces:hash>
+				<aces:transformID>urn:ampas:aces:transformId:v1.5:ODT.Academy.Rec709_100nits_dim.a1.0.3</aces:transformID>
+			</aces:outputDeviceTransform>
+		</aces:outputTransform>
+   </aces:archivedPipeline>
+</aces:acesMetadataFile>
