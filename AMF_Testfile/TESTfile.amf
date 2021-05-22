@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <aces:acesMetadataFile xmlns:aces="urn:ampas:aces:amf:v1.0" xmlns:cdl="urn:ASC:CDL:v1.01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ampas:aces:amf:v1.0 file:acesMetadataFile.xsd" version="1.0">
+
+<!--
+Multiple unbouned elements are specified in S-2019-001, They are <aces:archivedPipeline><aces:author><aces:lookTransform> elemnts.
+and I write them out as much as possible to test the robustness of the system.
+
+But for tree XML, they cannot recognize the child with the same name.
+So I hide those.
+-->	
+
     <aces:amfInfo>
-        <aces:description>Creative by Yu_JingXuan, This just a test .amf,Include as much data define in S-2019-001 as possible.Multiple unbouned elements are specified, and I write them out as much as possible to test the robustness of the system.</aces:description>
+        <aces:description>Creative by Yu_JingXuan, This just a test .amf,Include as much data define in S-2019-001 as possible.</aces:description>
         <aces:author>
         	<aces:name>Yu_JingXuan</aces:name>
         	<aces:emailAddress>youdrewxuan@icloud.com</aces:emailAddress>
-        <aces:author>
+        </aces:author>
+<!--
         <aces:author>
         	<aces:name>S-2019-001</aces:name>
         	<aces:emailAddress>https://community.acescentral.com/uploads/short-url/e4v6I9CuoMv5wauxqwnUkLvWjw6.pdf</aces:emailAddress>
-        <aces:author>		
+        </aces:author>
+-->		
         <aces:dateTime>
             <aces:creationDateTime>2020-12-06T00:55:38.87Z</aces:creationDateTime>
             <aces:modificationDateTime>2021-05-22T00:55:38.87Z</aces:modificationDateTime>
@@ -17,20 +28,18 @@
         <aces:uuid>urn:uuid:797c7cd8-4eb1-4f67-afce-af2b0a1d0285</aces:uuid>
     </aces:amfInfo>
 
-
     <aces:clipId>
 		<aces:clipName>A114C002_1908231N</aces:clipName>
 		<aces:file>A114C002_1908231N.mxf</aces:file>
 	</aces:clipId>
 
-
     <aces:pipeline>
         <aces:pipelineInfo>
         	<aces:description>Creative by Yu_JingXuan, use sliverstack.This is the main pipeline of this .amf.</aces:description>
     		<aces:author>
-        		<aces:name>Yu_JingXuan and S-2019-001</aces:name>
+        		<aces:name>YuJingXuan and S-2019-001</aces:name>
         		<aces:emailAddress>youdrewxuan@icloud.com</aces:emailAddress>
-        	<aces:author>
+        	</aces:author>
             <aces:dateTime>
                 <aces:creationDateTime>2020-12-06T00:55:38.87Z</aces:creationDateTime>
                 <aces:modificationDateTime>2021-05-22T00:55:38.87Z</aces:modificationDateTime>
@@ -67,6 +76,7 @@
                 <cdl:Saturation>1.0916</cdl:Saturation>
             </cdl:SatNode>
         </aces:lookTransform>
+ <!--
 		<aces:lookTransform applied="false">
 			<aces:description>CDL Grade</aces:description>
 			<aces:cdlWorkingSpace>
@@ -86,10 +96,13 @@
 				<cdl:Saturation>1</cdl:Saturation>
 			</cdl:ASC_SAT>
 		</aces:lookTransform>
+-->	
+ <!--
         <aces:lookTransform applied="false">
             <aces:description>LMT pointing to the associated CLF file.</aces:description>
             <aces:file>Isabella_testfile.clf</aces:file>
         </aces:lookTransform>
+-->	
         <aces:outputTransform>
             <aces:referenceRenderingTransform>
                 <aces:description>ACES 1.0 - RRT</aces:description>
@@ -153,7 +166,7 @@
 			</aces:outputDeviceTransform>
 		</aces:outputTransform>
    </aces:archivedPipeline>
-
+ <!--
    <aces:archivedPipeline>
 		<aces:pipelineInfo>
 			<aces:description>Example2 for AMF Implementation group</aces:description>
@@ -204,4 +217,5 @@
 			</aces:outputDeviceTransform>
 		</aces:outputTransform>
    </aces:archivedPipeline>
+-->	
 </aces:acesMetadataFile>
