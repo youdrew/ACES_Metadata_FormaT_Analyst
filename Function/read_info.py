@@ -56,11 +56,6 @@ def get_AMFInfo(root):
     rst.append(amfInfo_amfUUID)
     return rst
 
-    # # 设置AMFINFO下的几个文本框信息
-    # self.ANALYSISPanel_Info_AMFInfo_TextEdit.setPlainText(amfInfo_description)
-    # self.ANALYSISPanel_Info_Name_LineEdit.setText(amfInfo_name)
-    # self.ANALYSISPanel_Info_EmailAddress_LineEdit.setText(amfInfo_emailAdress)
-    # self.ANALYSISPanel_Info_AMFUUID_LineEdit.setText(amfInfo_amfUUID)
 
 def get_ClipID(root):
     '''解析ClipID部分的五个信息
@@ -112,11 +107,3 @@ def get_ClipID(root):
     rst.append(ClipID_sequence)
     return rst
 
-    #
-    #
-    # # 设置ClipID下的几个文本框信息
-    # self.ANALYSISPanel_Info_CilpID_TextEdit.setPlainText(ClipID_description)
-    # self.ANALYSISPanel_Info_CilpName_LineEdit.setText(ClipID_name)
-    # self.ANALYSISPanel_Info_CilpUUID_LineEdit.setText(ClipID_UUID)
-    # self.ANALYSISPanel_Info_FilePath_LineEdit.setText(ClipID_path)
-    # self.ANALYSISPanel_Info_Sequence_LineEdit.setText(ClipID_sequence)
