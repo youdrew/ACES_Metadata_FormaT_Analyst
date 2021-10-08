@@ -2,6 +2,8 @@ import sys
 from PyQt5.QtWidgets import QMainWindow,QApplication,QToolTip,QFileDialog
 from PyQt5.uic import loadUi
 from PyQt5.QtGui import QIcon,QFont
+import Function.read_info
+
 
 try:
   import xml.etree.cElementTree as ET
@@ -17,7 +19,7 @@ class MAINsolfware(QMainWindow):
     def __init__(self,parent=None):
         super(MAINsolfware,self).__init__(parent)
 
-        loadUi('UI_file/0510_test.ui',self)
+        loadUi('UI_file/0509_test.ui',self)
         #test
 
         # self.setFixedSize(self.sizeHint())                         # 这一条是用来调整窗口大小的
@@ -67,12 +69,24 @@ class MAINsolfware(QMainWindow):
         amf_filepath = amf_filePath[0]
         # print(amf_filepath)
 
-        # 调试代码
+        # # 调试代码
         # global amf_filepath
-        # amf_filepath = 'D:/work/AMFTool/Isabella_trial.amf'
+        # amf_filepath = r'D:\work\AMFTool\test1.amf'
 
-        self.Printinfo()
+        rst1,rst2=Function.read_info.Printinfo(amf_filepath)
 
+        # 设置AMFINFO下的几个文本框信息
+        self.ANALYSISPanel_Info_AMFInfo_TextEdit.setPlainText(rst1[0])
+        self.ANALYSISPanel_Info_Name_LineEdit.setText(rst1[1])
+        self.ANALYSISPanel_Info_EmailAddress_LineEdit.setText(rst1[2])
+        self.ANALYSISPanel_Info_AMFUUID_LineEdit.setText(rst1[3])
+
+        # 设置ClipID下的几个文本框信息
+        self.ANALYSISPanel_Info_CilpID_TextEdit.setPlainText(rst2[0])
+        self.ANALYSISPanel_Info_CilpName_LineEdit.setText(rst2[1])
+        self.ANALYSISPanel_Info_CilpUUID_LineEdit.setText(rst2[2])
+        self.ANALYSISPanel_Info_FilePath_LineEdit.setText(rst2[3])
+        self.ANALYSISPanel_Info_Sequence_LineEdit.setText(rst2[4])
 
     def I_was_clicked(self):
         global AMF_Save_Path
@@ -87,126 +101,6 @@ class MAINsolfware(QMainWindow):
         global AMF_Save_Path
         AMF_Save_Path = self.OUTPUTPanel_SaveAs_LineEdit.text()
         print("文件保存路径：" + AMF_Save_Path)
-
-    def get_AMFInfo(self,root):
-        '''解析AMFinfo部分的四个信息
-           description
-           name
-           emailAdress
-           amfUUID'''
-        global amfInfo_description
-        global amfInfo_name
-        global amfInfo_emailAdress
-        global amfInfo_amfUUID
-        # 找到root节点下的所有amfInfo节点
-        for amfInfo in root.findall('{urn:ampas:aces:amf:v1.0}amfInfo'):
-
-            # 查找amfInfo节点下的 description 节点
-            description = amfInfo.find('{urn:ampas:aces:amf:v1.0}description')
-            if description is None:
-                amfInfo_description = 'None'
-            else:
-                amfInfo_description = description.text
-
-            # 查找amfInfo节点下的 name 节点
-            name = amfInfo.find('{urn:ampas:aces:amf:v1.0}name')
-            if name is None:
-                amfInfo_name = 'None'
-            else:
-                amfInfo_name = name.text
-
-            # 查找amfInfo节点下的 emailAdress 节点
-            emailAdress = amfInfo.find('{urn:ampas:aces:amf:v1.0}emailAdress')
-            if emailAdress is None:
-                amfInfo_emailAdress = 'None'
-            else:
-                amfInfo_emailAdress = emailAdress.text
-
-            # 查找amfInfo节点下的 amfUUID 节点
-            amfUUID = amfInfo.find('{urn:ampas:aces:amf:v1.0}amfUUID')
-            if amfUUID is None:
-                amfInfo_amfUUID = 'None'
-            else:
-                amfInfo_amfUUID = amfUUID.text
-
-        # 设置AMFINFO下的几个文本框信息
-        self.ANALYSISPanel_Info_AMFInfo_TextEdit.setPlainText(amfInfo_description)
-        self.ANALYSISPanel_Info_Name_LineEdit.setText(amfInfo_name)
-        self.ANALYSISPanel_Info_EmailAddress_LineEdit.setText(amfInfo_emailAdress)
-        self.ANALYSISPanel_Info_AMFUUID_LineEdit.setText(amfInfo_amfUUID)
-
-    def get_ClipID(self, root):
-        '''解析ClipID部分的五个信息
-                   description
-                   name
-                   ClipIDUUID
-                   ClipIDPath
-                   ClipIDSequence'''
-        global ClipID_description
-        global ClipID_name
-        global ClipID_UUID
-        global ClipID_path
-        global ClipID_sequence
-
-        # 找到 root 节点下的所有 clipId 节点
-        clipId = root.find('{urn:ampas:aces:amf:v1.0}clipId')
-        if clipId is None:
-            ClipID_description = 'None'
-            ClipID_name = 'None'
-            ClipID_UUID = 'None'
-            ClipID_path = 'None'
-            ClipID_sequence = 'None'
-        else:
-            # 查找 clipId 节点下的 description 节点
-            description = clipId.find('{urn:ampas:aces:amf:v1.0}description')
-            if description is None:
-                ClipID_description = 'None'
-            else:
-                ClipID_description = description.text
-
-            # 查找 clipId 节点下的 clipName 节点
-            clipName = clipId.find('{urn:ampas:aces:amf:v1.0}clipName')
-            if clipName is None:
-                ClipID_name = 'None'
-            else:
-                ClipID_name = clipName.text
-
-            # 查找 clipId 节点下的 UUID 节点
-            UUID = clipId.find('{urn:ampas:aces:amf:v1.0}UUID')
-            if UUID is None:
-                ClipID_UUID = 'None'
-            else:
-                ClipID_UUID = UUID.text
-
-            # 查找 clipId 节点下的 file 节点
-            file = clipId.find('{urn:ampas:aces:amf:v1.0}file')
-            if file is None:
-                ClipID_path = 'None'
-            else:
-                ClipID_path = file.text
-
-            # 查找 clipId 节点下的 sequence 节点
-            sequence = clipId.find('{urn:ampas:aces:amf:v1.0}sequence')
-            if sequence is None:
-                ClipID_sequence = 'None'
-            else:
-                ClipID_sequence = sequence.text
-
-        # 设置ClipID下的几个文本框信息
-        self.ANALYSISPanel_Info_CilpID_TextEdit.setPlainText(ClipID_description)
-        self.ANALYSISPanel_Info_CilpName_LineEdit.setText(ClipID_name)
-        self.ANALYSISPanel_Info_CilpUUID_LineEdit.setText(ClipID_UUID)
-        self.ANALYSISPanel_Info_FilePath_LineEdit.setText(ClipID_path)
-        self.ANALYSISPanel_Info_Sequence_LineEdit.setText(ClipID_sequence)
-
-    def Printinfo(self):
-        '''解析并打印amf文件中的信息'''
-        # 解析amf文件,获取根节点root
-        tree = ET.parse(amf_filepath)
-        global root
-        root = tree.getroot()
-        self.get_AMFInfo(root)
-        self.get_ClipID(root)
 
 
 if __name__ == '__main__':
