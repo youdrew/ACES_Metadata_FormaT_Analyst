@@ -29,7 +29,7 @@ def Printinfo(amf_filepath):
     #acesMetadataFile_rst['cdlversion'] = root.get('xmlns:cdl')
 
     aces_amfVersionNumber = '{'+acesMetadataFile_rst['schemaLocation'][:23]+'}'  #需要{urn:ampas:aces:amf:v1.0}这么一段内容加在搜索词前面，才能找到对应的元素
-    cdl_VersionNumber
+    cdl_VersionNumber = '{urn:ASC:CDL:v1.01}'
 
     amfinfo_rst = get_AMFInfo(root)
     clipid_rst = get_ClipID(root)
