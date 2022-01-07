@@ -64,3 +64,5 @@ It has the following functions **under development**:
 + Display LMT information in the form of Cube and Cruve.
 
 + Output AMF file information in various forms(i.e EXCEL, CUBE LUT etc).
+
++ Translate from color pipeline information of AMF files to OCIO configuration files.
